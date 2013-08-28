@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script src="galleria/galleria-1.2.9.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div id="container">
+			<div id="galleria">
+			</div>
+			<script>
+	            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+	            Galleria.configure({
+	            	thumbnails: false,
+	            	showCounter: false,
+	            	wait: true
+	            })
+	            var data = [
+	            { image: "img/img2422.jpg"},
+	            { image: "img/img2427.jpg"},
+	            { image: "img/img2512.jpg"},
+	            { image: "img/img2436.jpg"},
+	            { image: "img/img2480.jpg"},
+	            { image: "img/img2519.jpg"},
+	            { image: "img/img2523.jpg"},
+	            { image: "img/img2439.jpg"},
+	            ];
+	            Galleria.run('#galleria', {
+					height: .5625,
+	            	dataSource: data,
+	            });
+	        </script>
+	    </div>
+	</body>
+</html>
